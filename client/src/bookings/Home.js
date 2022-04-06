@@ -17,7 +17,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-fluid bg-secondary p-5 text-center">
+      <div
+        className="container-fluid p-5 text-center"
+        style={{ backgroundColor: "#c2e8ff" }}
+      >
         <h1>Welcome to staycation</h1>
       </div>
       <div className="col">

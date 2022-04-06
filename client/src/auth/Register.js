@@ -32,22 +32,38 @@ const Register = () => {
 
   return (
     <>
-      <div className="container-fluid p-5 text-center">
-        <h1>Register Form</h1>
-      </div>
+      <div
+        style={{
+          paddingTop: "4vw",
+          paddingBottom: "4vw",
+          backgroundColor: "#6d90c7",
+          minHeight: "100vh",
+        }}
+      >
+        <div className="d-flex justify-content-center">
+          <div
+            className="col-lg-6 pb-5 bg-white"
+            style={{ borderRadius: "25px", boxShadow: "3px 3px rgb(33,37,41)" }}
+          >
+            <div className="container-fluid p-5 text-center">
+              <h1>Register Yourself!!!</h1>
+            </div>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 offset-md-3">
-            <RegisterForm
-              handleSubmit={HandleSubmit}
-              name={name}
-              setName={setName}
-              email={email}
-              setEmail={setEmail}
-              password={password}
-              setPassword={setPassword}
-            ></RegisterForm>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6 offset-md-3">
+                  <RegisterForm
+                    handleSubmit={HandleSubmit}
+                    name={name}
+                    setName={setName}
+                    email={email}
+                    setEmail={setEmail}
+                    password={password}
+                    setPassword={setPassword}
+                  ></RegisterForm>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

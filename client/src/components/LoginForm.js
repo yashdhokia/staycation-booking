@@ -8,7 +8,9 @@ const LoginForm = ({
 }) => (
   <form onSubmit={handleSubmit}>
     <div className="form-group p-3">
-      <label className="form-label">Email Address</label>
+      <label className="form-label" style={{ fontWeight: "bold" }}>
+        Email Address
+      </label>
       <input
         type="email"
         className="form-control"
@@ -18,8 +20,10 @@ const LoginForm = ({
       />
     </div>
 
-    <div className="form-group p-3">
-      <label className="form-label">Password</label>
+    <div className="form-group p-3 ">
+      <label className="form-label " style={{ fontWeight: "bold" }}>
+        Password
+      </label>
       <input
         type="password"
         className="form-control"
@@ -28,10 +32,11 @@ const LoginForm = ({
         onChange={(e) => setPassword(e.target.value)}
       />
     </div>
-
-    <button disabled={!email || !password} className="btn btn-primary">
-      submit
-    </button>
+    <div className=" text-center">
+      <button disabled={!email || !password} className="btn btn-primary">
+        submit
+      </button>
+    </div>
   </form>
 );
 
